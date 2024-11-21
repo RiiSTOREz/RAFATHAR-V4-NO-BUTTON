@@ -2265,395 +2265,21 @@ let teks = `Perkenalan Saya Adalah Bot WhatsApp *RiiSTORE ID* Yang Siap Membantu
 ꆜ *Saldo* : Rp. ${toRupiah(cekSaldo(m.sender, db_saldo))}
 ꆜ *Prefix* : Multi Prefix
 ꆜ *Versi* : 4.0.4 NEW ( SUPPORT CH)
-ꆜ *Platfrom* : Chrome ( Ubuntu )`
-const bet = {
-title: "MENU",
-sections: [
-{
-title: `List menu yang sering dipakai`, 
-highlight_label: `Populer`,
-rows: [
-{
-title: "ALL MENU",
-description: "Menampilkan All Menu",
-id: `${prefix}allmenu-nl`, 
-},
-]},
-{
-title: `List menu yang dipisahkan`, 
-highlight_label: ``,
-rows: [
-{
-title: "MAIN MENU",
-description: "Menampilkan Main Menu",
-id: `${prefix}mainmenu-nl`, 
-},
-{
-title: "OWNER MENU",
-description: "Menampilkan Owner Menu",
-id: `${prefix}ownermenu-nl`, 
-},
-{
-title: "GROUP MENU",
-description: "Menampilkan Group Menu",
-id: `${prefix}groupmenu-nl`, 
-},
-{
-title: "BUG MENU",
-description: "Menampilkan Bug Menu",
-id: `${prefix}bugmenu-nl`, 
-},
-{
-title: "GAMES MENU",
-description: "Menampilkan Games Menu",
-id: `${prefix}gamesmenu-nl`, 
-},
-{
-title: "MENFES MENU",
-description: "Menampilkan Menfes Menu",
-id: `${prefix}menfesmenu-nl`, 
-},
-{
-title: "DOMAIN MENU",
-description: "Menampilkan Domain Menu",
-id: `${prefix}domainmenu-nl`, 
-},
-{
-title: "SEWABOT MENU",
-description: "Menampilkan Sewa Bot Menu",
-id: `${prefix}sewabotmenu-nl`, 
-},
-{
-title: "TBASH MENU",
-description: "Menampilkan Tbash Menu",
-id: `${prefix}tbashmenu-nl`, 
-},
-{
-title: "UPDATE MENU",
-description: "Menampilkan Update Menu",
-id: `${prefix}updatemenu-nl`, 
-},
-{
-title: "DEPOSIT SEWARIA MENU",
-description: "Menampilkan Deposit Saweria Menu",
-id: `${prefix}deposaweriamenu-nl`, 
-},
-{
-title: "BUY OTOMATIS MENU",
-description: "Menampilkan Buy Otomatis Menu",
-id: `${prefix}buyotomatismenu-nl`, 
-},
-{
-title: "BUY SC MENU",
-description: "Menampilkan Buysc Menu",
-id: `${prefix}buyscmenu-nl`, 
-},
-{
-title: "KIRIM SC MENU",
-description: "Menampilkan Kirim Menu",
-id: `${prefix}kirimscmenu-nl`, 
-},
-{
-title: "BPANEL MENU",
-description: "Menampilkan Bpanel Menu",
-id: `${prefix}bpanelmenu-nl`, 
-},
-{
-title: "DOXXING MENU",
-description: "Menampilkan Doxxing Menu",
-id: `${prefix}doxxingmenu-nl`, 
-},
-{
-title: "DOWNLOAD MENU",
-description: "Menampilkan Donlod Menu",
-id: `${prefix}donlodmenu-nl`, 
-},
-{
-title: "CHATAI MENU",
-description: "Menampilkan Chatai Menu",
-id: `${prefix}chataimenu-nl`, 
-},
-{
-title: "SEARCH MENU",
-description: "Menampilkan Search Menu",
-id: `${prefix}searchmenu-nl`, 
-},
-{
-title: "OTHERS MENU",
-description: "Menampilkan Others Menu",
-id: `${prefix}othersmenu-nl`, 
-},
-]},
-{
-title: `Menu RafatharCode Store`, 
-highlight_label: ``,
-rows: [
-{
-title: "PPOB INDONESIA",
-description: "Menampilkan PPOB Indonesia",
-id: `${prefix}ppobindonesia-nl`, 
-},
-{
-title: "DIGITAL OCEAN",
-description: "Menampilkan Digital Ocean",
-id: `${prefix}digitalocean-nl`, 
-},
-{
-title: "LINODE",
-description: "Menampilkan Linode",
-id: `${prefix}linode-nl`, 
-},
-{
-title: "INSTAL PANEL",
-description: "Menampilkan Install Panel",
-id: `${prefix}installpanel-nl`, 
-},
-{
-title: "NGEPUSH MENU",
-description: "Menampilkan Ngepush Menu",
-id: `${prefix}ngepushmenu-nl`, 
-},
-{
-title: "CPANEL V1 MENU",
-description: "Menampilkan Cpanel v1 Menu",
-id: `${prefix}cpanelv1menu-nl`, 
-},
-{
-title: "CPANEL V2 MENU",
-description: "Menampilkan Cpanel v2 Menu",
-id: `${prefix}cpanelv2menu-nl`, 
-},
-{
-title: "STORE MENU",
-description: "Menampilkan Store Menu",
-id: `${prefix}storemenu-nl`, 
-},
-]},
-{
-title: `Informasi Tentang Bot`, 
-highlight_label: ``,
-rows: [
-{
-title: "SCRIPT",
-description: "Beli script ini dengan harga murah",
-id: `${prefix}script`, 
-},
-{
-title: "CREDIT",
-description: "Orang yang telah membantu mengembangkan",
-id: `${prefix}credit`, 
-},
-{
-title: "INFO BOT",
-description: "Informasi total fitur dan lainnya",
-id: `${prefix}infobot`, 
-},
-]},
-]};
+ꆜ *Platfrom* : Chrome ( Ubuntu )
+*BERIKUT MENU YANG TERSEDIA*
+${prefix}.allmenu
+${prefix}.ownermenu
+${prefix}.groupmenu
+${prefix}.kdtmenu
+${prefix}.listsubdomain
+${prefix}.bugmenu
+${prefix}.topupmenu
+${prefix}.pushmenu
+${prefix}.downloadmenu
+`
 
-listbut2(m.chat, teks, bet, m)
-}
 break
-
-
-
-case 'rafax': {
-rafatharcode.sendMessage(from, {react: {text: "🔎", key: m.key}})
-let teks = `Perkenalan Saya Adalah Bot WhatsApp *RiiSTORE ID* Yang Siap Membantu Anda!
-
-⊑ *INFORMATION* ⊒
-ꆜ *Nama* : ${botname}
-ꆜ *Owner* : ${ownername}
-ꆜ *Status* :  ${isOwner ? 'Owner' : isPremium ? 'Premium' : isReseller ? 'Reseller' : isReseller2 ? 'Reseller2' : isOwner2 ? 'Owner2' : 'User'}
-ꆜ *Total Fitur* : ${totalFitur()}
-ꆜ *Total User* : ${Object.values(db.data.users).length} Users
-ꆜ *Saldo* : Rp. ${toRupiah(cekSaldo(m.sender, db_saldo))}
-ꆜ *Prefix* : Multi Prefix
-ꆜ *Menu Owner* : .menu
-ꆜ *Versi* : 4.0.4 NEW ( SUPPORT CH)
-ꆜ *Platfrom* : Chrome ( Ubuntu )`
-const bet = {
-title: "MENU",
-sections: [
-{
-title: `List menu yang sering dipakai`, 
-highlight_label: `Populer`,
-rows: [
-{
-title: "ALL MENU",
-description: "Menampilkan All Menu",
-id: `${prefix}allmenu-nl`, 
-},
-]},
-{
-title: `List menu yang dipisahkan`, 
-highlight_label: ``,
-rows: [
-{
-title: "MAIN MENU",
-description: "Menampilkan Main Menu",
-id: `${prefix}mainmenu-nl`, 
-},
-{
-title: "OWNER MENU",
-description: "Menampilkan Owner Menu",
-id: `${prefix}ownermenu-nl`, 
-},
-{
-title: "GROUP MENU",
-description: "Menampilkan Group Menu",
-id: `${prefix}groupmenu-nl`, 
-},
-{
-title: "BUG MENU",
-description: "Menampilkan Bug Menu",
-id: `${prefix}bugmenu-nl`, 
-},
-{
-title: "GAMES MENU",
-description: "Menampilkan Games Menu",
-id: `${prefix}gamesmenu-nl`, 
-},
-{
-title: "MENFES MENU",
-description: "Menampilkan Menfes Menu",
-id: `${prefix}menfesmenu-nl`, 
-},
-{
-title: "DOMAIN MENU",
-description: "Menampilkan Domain Menu",
-id: `${prefix}domainmenu-nl`, 
-},
-{
-title: "UPDATE MENU",
-description: "Menampilkan Update Menu",
-id: `${prefix}updatemenu-nl`, 
-},
-{
-title: "DEPOSIT SEWARIA MENU",
-description: "Menampilkan Deposit Saweria Menu",
-id: `${prefix}deposaweriamenu-nl`, 
-},
-{
-title: "BUY OTOMATIS MENU",
-description: "Menampilkan Buy Otomatis Menu",
-id: `${prefix}buyotomatismenu-nl`, 
-},
-{
-title: "BUY SC MENU",
-description: "Menampilkan Buysc Menu",
-id: `${prefix}buyscmenu-nl`, 
-},
-{
-title: "KIRIM SC MENU",
-description: "Menampilkan Kirim Menu",
-id: `${prefix}kirimscmenu-nl`, 
-},
-{
-title: "DOXXING MENU",
-description: "Menampilkan Doxxing Menu",
-id: `${prefix}doxxingmenu-nl`, 
-},
-{
-title: "KUDETA MENU",
-description: "Menampilkan Kudeta Menu",
-id: `${prefix}kdtmenu-nl`, 
-},
-{
-title: "DOWNLOAD MENU",
-description: "Menampilkan Donlod Menu",
-id: `${prefix}donlodmenu-nl`, 
-},
-{
-title: "CHATAI MENU",
-description: "Menampilkan Chatai Menu",
-id: `${prefix}chataimenu-nl`, 
-},
-{
-title: "SEARCH MENU",
-description: "Menampilkan Search Menu",
-id: `${prefix}searchmenu-nl`, 
-},
-{
-title: "OTHERS MENU",
-description: "Menampilkan Others Menu",
-id: `${prefix}othersmenu-nl`, 
-},
-]},
-{
-title: `Menu RafatharCode Store`, 
-highlight_label: ``,
-rows: [
-{
-title: "PPOB INDONESIA",
-description: "Menampilkan PPOB Indonesia",
-id: `${prefix}ppobindonesia-nl`, 
-},
-{
-title: "DIGITAL OCEAN",
-description: "Menampilkan Digital Ocean",
-id: `${prefix}digitalocean-nl`, 
-},
-{
-title: "LINODE",
-description: "Menampilkan Linode",
-id: `${prefix}linode-nl`, 
-},
-{
-title: "INSTAL PANEL",
-description: "Menampilkan Install Panel",
-id: `${prefix}installpanel-nl`, 
-},
-{
-title: "NGEPUSH MENU",
-description: "Menampilkan Ngepush Menu",
-id: `${prefix}ngepushmenu-nl`, 
-},
-{
-title: "CPANEL V1 MENU",
-description: "Menampilkan Cpanel v1 Menu",
-id: `${prefix}cpanelv1menu-nl`, 
-},
-{
-title: "CPANEL V2 MENU",
-description: "Menampilkan Cpanel v2 Menu",
-id: `${prefix}cpanelv2menu-nl`, 
-},
-{
-title: "STORE MENU",
-description: "Menampilkan Store Menu",
-id: `${prefix}storemenu-nl`, 
-},
-]},
-{
-title: `Informasi Tentang Bot`, 
-highlight_label: ``,
-rows: [
-{
-title: "SCRIPT",
-description: "Beli script ini dengan harga murah",
-id: `${prefix}script`, 
-},
-{
-title: "CREDIT",
-description: "Orang yang telah membantu mengembangkan",
-id: `${prefix}credit`, 
-},
-{
-title: "INFO BOT",
-description: "Informasi total fitur dan lainnya",
-id: `${prefix}infobot`, 
-},
-]},
-]};
-
-listbut2(m.chat, teks, bet, m)
-Rafa1StickSc()
-}
-break
-
-case 'allmenu':
-case 'allmenu-nl': {
+case 'allmenu':{
 rafatharcode.sendMessage(from, {react: {text: "🔎", key: m.key}})
 let teks = `┏━ ⊑ *INFO BOT* ⊒
 ┃ꆜ *Nama* : ${botname}
@@ -3260,7 +2886,7 @@ listbut(m.chat, teks, beton, m)
 break
 
 case 'mainmenu':
-case 'mainmenu-nl': {
+case 'mainmenu': {
 rafatharcode.sendMessage(from, {react: {text: "🔎", key: m.key}})
 let teks = `┏━ ⊑ *MAIN MENU* ⊒
 ┃ ${prefix}regis
@@ -3303,8 +2929,7 @@ Rafa1StickSc()
 }
 break
 
-case 'ownermenu':
-case 'ownermenu-nl': {
+case 'ownermenu': {
 
 rafatharcode.sendMessage(from, {react: {text: "🔎", key: m.key}})
 let teks = `┏━ ⊑ *OWNER  MENU* ⊒
@@ -3417,8 +3042,7 @@ sendbutton(m.chat, teks, m)
 }
 break
 
-case 'groupmenu':
-case 'groupmenu-nl': {
+case 'groupmenu': {
 
 rafatharcode.sendMessage(from, {react: {text: "🔎", key: m.key}})
 let teks = `┏━ ⊑ *GROUP  MENU* ⊒
@@ -3455,8 +3079,7 @@ sendbutton(m.chat, teks, m)
 }
 break
 
-case 'gamesmenu':
-case 'gamesmenu-nl': {
+case 'gamesmenu': {
 rafatharcode.sendMessage(from, {react: {text: "🔎", key: m.key}})
 let teks = `┏━ ⊑ *GAMES  MENU* ⊒
 ┃ ${prefix}family100
@@ -3491,8 +3114,7 @@ sendbutton(m.chat, teks, m)
 }
 break
 
-case 'storemenu':
-case 'storemenu-nl': {
+case 'storemenu': {
 rafatharcode.sendMessage(from, {react: {text: "🔎", key: m.key}})
 let teks = `┏━ ⊑ *STORE  MENU* ⊒
 ┃ ${prefix}tambah
@@ -3516,8 +3138,7 @@ sendbutton(m.chat, teks, m)
 }
 break
 
-case 'bugmenu':
-case 'bugmenu-nl': {
+case 'bugmenu': {
 rafatharcode.sendMessage(from, {react: {text: "🔎", key: m.key}})
 let teks = `┏━ ⊑ *BUG MENU* ⊒
 ┃ *BUG ANDROID*
@@ -3572,8 +3193,7 @@ sendbutton(m.chat, teks, m)
 }
 break
 
-case 'menfesmenu':
-case 'menfesmenu-nl': {
+case 'menfesmenu': {
 rafatharcode.sendMessage(from, {react: {text: "🔎", key: m.key}})
 let teks = `┏━ ⊑ *MENFES  MENU* ⊒
 ┃ ${prefix}anonymous
@@ -3593,8 +3213,7 @@ sendbutton(m.chat, teks, m)
 }
 break
 
-case 'domainmenu':
-case 'domainmenu-nl': {
+case 'domainmenu': {
 rafatharcode.sendMessage(from, {react: {text: "🔎", key: m.key}})
 let teks = `┏━ ⊑ *DOMAIN  MENU* ⊒
 ┃ ${prefix}listsubdomain
@@ -3608,8 +3227,7 @@ sendbutton(m.chat, teks, m)
 }
 break
 
-case 'sewabotmenu':
-case 'sewabotmenu-nl': {
+case 'sewabotmenu': {
 rafatharcode.sendMessage(from, {react: {text: "🔎", key: m.key}})
 let teks = `┏━ ⊑ *SEWA BOT  MENU* ⊒
 ┃ ${prefix}creategc
@@ -3626,8 +3244,7 @@ sendbutton(m.chat, teks, m)
 }
 break
 
-case 'tbashmenu':
-case 'tbashmenu-nl': {
+case 'tbashmenu': {
 rafatharcode.sendMessage(from, {react: {text: "🔎", key: m.key}})
 let teks = `┏━ ⊑ *TBASH  MENU* ⊒
 ┃ ${prefix}tbash1
@@ -3930,8 +3547,7 @@ sendbutton(m.chat, teks, m)
 }
 break
 
-case 'updatemenu':
-case 'updatemenu-nl': {
+case 'updatemenu': {
 rafatharcode.sendMessage(from, {react: {text: "🔎", key: m.key}})
 let teks = `┏━ ⊑ *UPDATE  MENU* ⊒
 ┃ ${prefix}upbashinstall
@@ -3960,8 +3576,7 @@ sendbutton(m.chat, teks, m)
 }
 break
 
-case 'buyotomatismenu':
-case 'buyotomatismenu-nl': {
+case 'buyotomatismenu': {
 rafatharcode.sendMessage(from, {react: {text: "🔎", key: m.key}})
 let teks = `┏━ ⊑ *BUY OTOMATIS  MENU* ⊒
 ┃ ${prefix}buysc-v1
@@ -3977,8 +3592,7 @@ sendbutton(m.chat, teks, m)
 }
 break
 
-case 'doxxingmenu':
-case 'doxxingmenu-nl': {
+case 'doxxingmenu': {
 
 rafatharcode.sendMessage(from, {react: {text: "🔎", key: m.key}})
 let teks = `┏━ ⊑ *DOXXING  MENU* ⊒
@@ -3991,8 +3605,7 @@ sendbutton(m.chat, teks, m)
 }
 break
 
-case 'kdtmenu':
-case 'kdtmenu-nl': {
+case 'kdtmenu': {
 
 rafatharcode.sendMessage(from, {react: {text: "🔎", key: m.key}})
 let teks = `┏━ ⊑ *KUDETA  MENU* ⊒
@@ -4009,7 +3622,7 @@ case 'listsubdomain':
 case 'ld': {
 if (!isOwner && !isJangan) return rafatharcodereply('Khusus Pengguna Reseller Subdomain RafatharCode!! Mau Liat List ? Join Reseller Subdomain RafatharCode🥵🙏')
 rafatharcode.sendMessage(from, {react: {text: "🔎", key: m.key}})
-let teks = `┏━ ⊑ *LIST DOMAIN RAFATHAR CODE* ⊒
+let teks = `┏━ ⊑ *LIST DOMAIN RIIBOTZZ* ⊒
 ┃ ${prefix}domain1 rafatharofficial.my.id 
 ┃ ${prefix}domain2 digital-market.me
 ┃ ${prefix}domain3 sellerpanell-store.xyz
@@ -4055,8 +3668,7 @@ sendbutton(m.chat, teks, m)
 }
 break
 
-case 'cpanelv1menu':
-case 'cpanelv1menu-nl': {
+case 'cpanelv1menu': {
 
 if (!isOwner && !isReseller) return rafatharcodereply('Maaf, Menu Ini Khusus Pengguna Reseller Server Private RafatharCode 1!! Mau Join ? Pm wa.me/6285864743922')
 rafatharcode.sendMessage(from, {react: {text: "🔎", key: m.key}})
@@ -4095,8 +3707,7 @@ sendbutton(m.chat, teks, m)
 }
 break
 
-case 'cpanelv2menu':
-case 'cpanelv2menu-nl': {
+case 'cpanelv2menu': {
 
 if (!isOwner && !isReseller2) return rafatharcodereply('Maaf, Menu Ini Khusus Pengguna Reseller Server Private RafatharCode 2!! Mau Join ? Pm wa.me/6285864743922')
 rafatharcode.sendMessage(from, {react: {text: "🔎", key: m.key}})
@@ -4124,8 +3735,7 @@ sendbutton(m.chat, teks, m)
 }
 break
 
-case 'bpanelmenu':
-case 'bpanelmenu-nl': {
+case 'bpanelmenu': {
 
 rafatharcode.sendMessage(from, {react: {text: "🔎", key: m.key}})
 let teks = `┏━ ⊑ *BUY PANEL 1 OTOMATIS* ⊒
@@ -4150,8 +3760,7 @@ sendbutton(m.chat, teks, m)
 }
 break
 
-case 'digitalocean':
-case 'digitalocean-nl': {
+case 'digitalocean': {
 
 rafatharcode.sendMessage(from, {react: {text: "🔎", key: m.key}})
 let teks = `┏━ ⊑ *DIGITAL  OCEAN* ⊒
@@ -4186,8 +3795,7 @@ sendbutton(m.chat, teks, m)
 }
 break
 
-case 'linode':
-case 'linode-nl': {
+case 'linode': {
 
 rafatharcode.sendMessage(from, {react: {text: "🔎", key: m.key}})
 let teks = `┏━ ⊑ *LINODE* ⊒
@@ -4210,7 +3818,7 @@ sendbutton(m.chat, teks, m)
 }
 break
 
-case 'installpanel-nl': 
+case 'installpanel': 
 case 'installpanelmenu' :{
 
 rafatharcode.sendMessage(from, {react: {text: "🔎", key: m.key}})
@@ -4229,8 +3837,8 @@ sendbutton(m.chat, teks, m)
 }
 break
 
-case 'ngepushmenu':
-case 'ngepushmenu-nl': {
+case 'pushmenu':
+case 'ngepushmenu': {
 
 rafatharcode.sendMessage(from, {react: {text: "🔎", key: m.key}})
 let teks = `┏━ ⊑ *NGEPUSH  MENU* ⊒
@@ -4249,8 +3857,8 @@ sendbutton(m.chat, teks, m)
 }
 break
 
-case 'ppobindonesia':
-case 'ppobindonesia-nl': {
+case 'topupmenu':
+case 'ppobindonesia': {
 
 rafatharcode.sendMessage(from, {react: {text: "🔎", key: m.key}})
 let teks = `┏━ ⊑ *PPOB  INDONESIA* ⊒
@@ -4268,8 +3876,8 @@ sendbutton(m.chat, teks, m)
 }
 break
 
-case 'donlodmenu':
-case 'donlodmenu-nl': {
+case 'downloadmenu':
+case 'donlodmenu': {
 
 rafatharcode.sendMessage(from, {react: {text: "🔎", key: m.key}})
 let teks = `┏━ ⊑ *DONLOD  MENU* ⊒
@@ -4290,7 +3898,7 @@ sendbutton(m.chat, teks, m)
 break
 
 case 'chataimenu':
-case 'chataimenu-nl': {
+case 'chataimenu': {
 
 rafatharcode.sendMessage(from, {react: {text: "🔎", key: m.key}})
 let teks = `┏━ ⊑ *CHATAI  MENU* ⊒
@@ -4312,7 +3920,7 @@ sendbutton(m.chat, teks, m)
 break
 
 case 'searchmenu':
-case 'searchmenu-nl': {
+case 'searchmenu': {
 
 rafatharcode.sendMessage(from, {react: {text: "🔎", key: m.key}})
 let teks = `┏━ ⊑ *SEARCH  MENU* ⊒
@@ -4338,7 +3946,7 @@ sendbutton(m.chat, teks, m)
 break
 
 case 'othersmenu':
-case 'othersmenu-nl': {
+case 'othersmenu': {
 
 rafatharcode.sendMessage(from, {react: {text: "🔎", key: m.key}})
 let teks = `┏━ ⊑ *OTHERS  MENU* ⊒
@@ -10198,7 +9806,7 @@ messageId: msgii.key.id
 }
 break
 
-case 'buyscmenu-nl':
+case 'buyscmenu':
 case 'buyscmenu': {
 let teksnya = `Berikut List Script Menu`
 let sections = [{
@@ -10271,7 +9879,7 @@ messageId: msgii.key.id
 })
 }
 break
-case 'deposaweriamenu-nl':
+case 'deposaweriamenu':
 case 'deposaweriamenu': {
 let teksnya = `Berikut Deposit Saweria`
 let sections = [{
@@ -10544,7 +10152,7 @@ messageId: msgii.key.id
 })
 }
 break
-case 'kirimscmenu-nl':
+case 'kirimscmenu':
 case 'kirimscmenu': {
 let teksnya = `Berikut List Script Menu`
 let sections = [{
